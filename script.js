@@ -104,6 +104,9 @@ function calculate() {
                     for (let e = 0; e < aminoAcid[d].length; e++) {
                         if (baseTranscribedLineArray[b] === aminoAcid[d][e]) {
                             aminoAcidLineArray[b] = aminoAcidName[d]
+                            if (aminoAcidLineArray[b] === aminoAcidName[20]) {
+                                document.getElementById('outputAminoAcid').innerHTML = 'Amino Acid Output: ' + aminoAcidLineArray.join('-')
+                            }
                         }
                     }
                 }

@@ -106,6 +106,7 @@ function calculate() {
                             aminoAcidLineArray[b] = aminoAcidName[d]
                             if (aminoAcidLineArray[b] === aminoAcidName[20]) {
                                 document.getElementById('outputAminoAcid').innerHTML = 'Amino Acid Output: ' + aminoAcidLineArray.join('-')
+                                return
                             }
                         }
                     }
